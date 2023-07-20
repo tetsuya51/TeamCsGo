@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function EquipeCard({ equipe }) {
   return (
-    <figure className="max-w-sm rounded overflow-hidden shadow-lg">
+    <figure className="max-w-sm rounded overflow-hidden shadow-2xl">
       <img className="w-full" src={equipe.logo} alt={equipe.team_name} />
       <figcaption className="px-6 py-4">
         <h1 className="flex justify-center font-bold text-xl mb-2">
