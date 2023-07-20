@@ -13,9 +13,12 @@ function Joueurlist() {
       .catch((err) => console.error(err));
   }, []);
 
-  return joueurs.map((joueur) => (
-    <JoueurCard key={joueur.id} joueur={joueur} />
-  ));
+  return (
+    <div className="flex flex-wrap justify-around p-10 gap-y-10">
+      {joueurs.map((joueur) => (
+        <JoueurCard key={joueur.id} joueur={joueur} />
+      ))}
+    </div>
+  );
 }
-
 export default Joueurlist;

@@ -16,12 +16,12 @@ function Navbar() {
         >
           Joueur
         </Link>
-        <a
-          href="/responsive-header"
+        <Link
+          to="/scores"
           className="mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
         >
           Score
-        </a>
+        </Link>
       </div>
     </nav>
   );

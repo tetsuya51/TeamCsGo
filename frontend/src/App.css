@@ -27,3 +27,54 @@
   align-items: center;
   justify-content: center;
 }
+
+.adminTitle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonNav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttonNav button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  color: #000000;
+  border: 1px solid #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 1rem;
+  width: 20rem;
+  height: 10rem;
+}
+
+.buttonNav button:hover {
+  background-color: lightslategrey;
+  border-radius: 1rem;
+}
+
+.linkButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 220px;
+}
+
+.linkButton:hover {
+  background-color: rgb(169, 169, 169);
+}

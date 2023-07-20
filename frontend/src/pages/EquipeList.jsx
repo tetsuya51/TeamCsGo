@@ -14,11 +14,15 @@ function EquipeList() {
       .catch((err) => console.error(err));
   }, []);
 
-  return equipes.map((equipe) => (
-    <Link to={`/equipes/${equipe.id}`}>
-      <EquipeCard key={equipe.id} equipe={equipe} />
-    </Link>
-  ));
+  return (
+    <div className="flex flex-wrap justify-around my-20">
+      {equipes.map((equipe) => (
+        <Link to={`/equipes/${equipe.id}`}>
+          <EquipeCard key={equipe.id} equipe={equipe} />
+        </Link>
+      ))}
+    </div>
+  );
 }
 
 export default EquipeList;
