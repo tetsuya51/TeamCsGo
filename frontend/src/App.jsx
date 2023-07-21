@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import EquipeList from "./pages/EquipeList";
+import Equipe from "./pages/Equipe";
 import Scores from "./components/ScoreList";
 import Admin from "./pages/Admin";
 import AddEquipe from "./components/AddEquipe";
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/equipes" element={<EquipeList />} />
+        <Route path="/equipes/:id" element={<Equipe />} />
         <Route path="/joueurs" element={<Joueurlist />} />
         <Route path="/scores" element={<Scores />} />
         <Route path="/admin" element={<Admin />} />
