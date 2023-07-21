@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import JoueurCard from "../components/JoueurCard";
 import { useParams } from "react-router-dom";
+import JoueurCard from "../components/JoueurCard";
 
 function EquipeId() {
   const { id } = useParams();
